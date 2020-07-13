@@ -318,7 +318,7 @@ let newArtistobj = {
 
 addArtist(artists, newArtistobj);
 
-console.log(artists);
+// console.log(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -328,9 +328,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */) {
-  /* Code here */
+function lotsOfArt(array) {
+  let painting100 = [];
+  for (i = 0; i < array.length; i++)
+    if (array[i].paintings > 100) {
+      painting100.push(array[i].name);
+    }
+  console.log(painting100);
 }
+
+lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
