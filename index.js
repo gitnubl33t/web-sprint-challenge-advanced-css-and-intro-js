@@ -299,9 +299,26 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */) {
-  /* Code here */
+function addArtist(array, newArtist) {
+  array.push(newArtist);
+  return array;
 }
+
+let newArtistobj = {
+  id: 20,
+  name: "Jessica Fuller",
+  years: "1986 - Still Living",
+  genre: "Photobashing",
+  nationality: "American",
+  bio:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  note: "Et harum quidem rerum facilis est et expedita distinctio.",
+  paintings: 21,
+};
+
+addArtist(artists, newArtistobj);
+
+console.log(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
