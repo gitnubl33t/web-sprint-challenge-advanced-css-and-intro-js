@@ -233,12 +233,6 @@ console.log(artists[2]["bio"]);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-$.each(artists, function () {
-  if (this.id == 8) {
-    this.name == "Vinvent van Gogh";
-  }
-});
-
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
